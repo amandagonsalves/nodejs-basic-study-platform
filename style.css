@@ -64,7 +64,7 @@ textarea {
     margin-left: 10%;
 }
 .title, .info {
-    color: var(--color-line-in-white);
+    color: var(--color-text-in-primary);
 }
 .info {
     display: flex;
