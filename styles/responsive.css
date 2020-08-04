@@ -18,7 +18,7 @@
         margin: 0;
     }
     .logo-container img {
-        height: 127px;
+        height: 118px;
     }
     .hero-image {
         grid-area: image;
@@ -31,6 +31,9 @@
     }
     .total-connections {
         grid-area: texting;
+    }
+    .total-connections img {
+        margin: 0;
     }
 }
 @media screen and (min-width:700px) {
