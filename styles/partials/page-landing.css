@@ -42,18 +42,28 @@
     transition: background 0.2s;
 }
 .buttons-container .study {
-    background-color: var(--color-primary-lighter);
-}
-.buttons-container .study:hover {
     background-color: var(--color-primary-light);
 }
+.buttons-container .study:hover {
+    background-color: var(--color-primary-lighter);
+}
 .buttons-container .give-classes {
-    background-color: var(--color-secondary);
+    background-color: var(--color-secondary-dark);
     margin-right: 0;
 }
 .buttons-container .give-classes:hover {
-    background-color: var(--color-secondary-dark);
+    background-color: var(--color-secondary);
 }
 .buttons-container a img {
     width: 4rem;
+    margin-right: 2.4rem;
+}
+.total-connections {
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.total-connections img {
+    margin-left: 0.8rem;
 }
