@@ -1,8 +1,5 @@
-:root {
-    font-size: 40%;
-}
 #page-landing {
-    background-color: var(--color-primary);
+    background-color: var(--color-primary-dark);
 }
 #page-landing #container {
     color: var(--color-text-in-primary);
@@ -67,3 +64,9 @@
 .total-connections img {
     margin-left: 0.8rem;
 }
+@media screen and (max-width:699px) {
+    :root {
+        font-size: 40%;
+    }
+    
+} 
