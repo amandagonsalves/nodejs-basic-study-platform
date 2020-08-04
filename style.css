@@ -46,7 +46,7 @@ textarea {
     width: 90vw;
     max-width: 800px;
 }
-.logo-content {
+.logo-container {
     display: flex;
 }
 .title {
@@ -56,11 +56,8 @@ textarea {
 .title img {
     width: 100%;
 }
-.img-landing {
+.hero-image {
     width: 60%;
-}
-.img-landing img {
-    width: 100%;
     margin-left: 10%;
 }
 .title, .info {
@@ -72,43 +69,44 @@ textarea {
     align-items: center;
     margin-top: 6%;
 }
-.buttons {
+.buttons-container {
     display: flex;
 }
-.buttons button {
+.buttons-container button {
     padding: 15px;
     border-radius: 10px;
     width: 160px;
     outline: none;
     cursor: pointer;
+    transition: background 0.2s;
 }
-.buttons button p {
+.buttons-container button p {
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.buttons button p span img {
+.buttons-container button p span img {
     width: 20px;
     height: 20px;
     margin-right: 8px;
     margin-top: 8px;
 }
-.buttons #student {
+.buttons-container #student {
     color: var(--color-button-text);
     border: 1px solid var(--color-primary-light);
     background-color: var(--color-primary-light);
 }
-.buttons #student:hover {
+.buttons-container #student:hover {
     border: 1px solid var(--color-primary-lighter);
     background-color: var(--color-primary-lighter);
 }
-.buttons #teacher {
+.buttons-container #give-classes {
     margin-left: 5%;
     border: 1px solid var(--color-secundary-dark);
     background-color: var(--color-secundary-dark);
     color: var(--color-button-text);
 }
-.buttons #teacher:hover {
+.buttons-container #give-classes:hover {
     border: 1px solid var(--color-secundary);
     background-color: var(--color-secundary);
 }
