@@ -32,7 +32,7 @@
     position: relative;
 }
 .page-header .header-content strong {
-    font: 700 2.6rem Archivo;
+    font: 700 3.6rem Archivo;
     color: var(--color-title-in-primary);
     line-height: 4.2rem;
 }
@@ -74,6 +74,7 @@
     width: 100%;
     height: 5.6rem;
     margin-top: 0.8rem;
+    border: none;
     border-radius: 0.8rem;
     background-color: var(--color-input-background);
     border: 1px solid var(color--line-in-white);
@@ -126,7 +127,7 @@
     display: block;
     margin-top: 0.4rem;
 }
-.teacher-item p {
+.teacher-item > p {
     padding: 0 2rem;
     font-size: 1.6rem;
     line-height: 2.8rem;
@@ -183,14 +184,60 @@
     .page-header .top-bar-container {
         max-width: 1100px;
     }
+    .page-header .header-content strong {
+        max-width: 350px;
+    }
     .page-header .header-content {
         max-width: 740px;
+        flex: 1 1;
+        padding-bottom: 48px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0 auto;
     }
     #search-teachers {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         gap: 16px;
         position: absolute;
-
+        bottom: -47px;
+        background-color: white;
+        border-radius: 10px;
+        padding: 9px;
+    }
+    #page-study main {
+        padding: 32px 0;
+        max-width: 740px;
+        margin: 0 auto;
+    }
+    #search-teachers .select-block {
+        margin-bottom: 0;
+    }
+    .teacher-item > p {
+        padding: 0 32px;
+    }
+    .teacher-item footer p strong {
+        display: initial;
+        margin-left: 16px;
+    }
+    .teacher-item footer button {
+        width: 245px;
+        font-size: 16px;
+        justify-content: center;
+    }
+    .teacher-item footer button img {
+        margin-right: 16px;
+    }
+    #search-teachers label {
+        color: var(--color-text-title);
+    }
+    .select-block select,
+    .input-block input {
+        height: 4.6rem;
+        background-color: #e6e6f0;
+    }
+    #search-teachers button {
+        height: 4.6rem;
     }
 }
