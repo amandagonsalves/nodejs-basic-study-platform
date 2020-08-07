@@ -10,7 +10,7 @@
     width: 100%;
     max-width: 74rem;
     border-radius: .8rem;
-    margin: -3.2rem auto 3.2rem;
+    margin: -5.2rem auto 3.2rem;
     padding-top: 6.4rem;
 }
 #page-give-classes fieldset {
@@ -103,8 +103,18 @@
         grid-template-columns: 2fr 1fr 1fr;
         column-gap: 1.6rem;
     }
-    #page-give-classes .select-block+.input-block,
-    #page-give-classes .input-block+.input-block  {
+    #page-give-classes main fieldset#schedule-items .select-block+.input-block,
+    #page-give-classes main fieldset#schedule-items .input-block+.input-block {
         margin-top: 0;
+    }
+    #page-give-classes main footer {
+        padding: 40px 64px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    #page-give-classes main footer button {
+        margin-top: 0;
+        width: 200px;
     }
 }
