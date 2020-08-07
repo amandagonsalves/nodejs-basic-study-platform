@@ -1,41 +1,4 @@
 
-#page-study #container {
-    width: 100vw;
-    height: 100vh;
-}
-.page-header {
-    background-color: var(--color-primary);
-    display: flex;
-    flex-direction: column;
-}
-.top-bar-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 90%;
-    margin: 0 auto;
-    padding: 1.6rem 0;
-}
-.page-header .top-bar-container a {
-    height: 3.2rem;
-    transition: opacity 0.2s;
-}
-.page-header .top-bar-container a:hover {
-    opacity: 0.6;
-}
-.page-header .top-bar-container img {
-    height: 1.6rem;
-}
-.page-header .header-content {
-    width: 90%;
-    margin: 3.2rem auto;
-    position: relative;
-}
-.page-header .header-content strong {
-    font: 700 3.6rem Archivo;
-    color: var(--color-title-in-primary);
-    line-height: 4.2rem;
-}
 #search-teachers {
     margin-top: 3.2rem;
 }
@@ -186,6 +149,7 @@
     }
     .page-header .header-content strong {
         max-width: 350px;
+        margin-bottom: 22px;
     }
     .page-header .header-content {
         max-width: 740px;
