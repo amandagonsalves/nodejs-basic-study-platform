@@ -8,7 +8,7 @@ Database.then(async (db) => {
         bio: 'Entusiasta das melhores tecnologias de química avançada. Apaixonado por explodir coisas em laboratório e por mudar a vida das pessoas através de experiências. Mais de 200.000 pessoas já passaram por uma das minhas explosões.'
     };
     classValue = {
-        subject: 'Química', 
+        subject: 1, 
         cost: '20'
     };
     classScheduleValues = [
@@ -24,8 +24,8 @@ Database.then(async (db) => {
         }
     ];
    /* await createProffy(db, {proffyValue, classValue, classScheduleValues}); */
-   const selectedProffys = await db.all("SELECT * FROM proffys");/* 
-   console.log(selectedProffys); */
+   const selectedProffys = await db.all("SELECT * FROM proffys"); 
+   /* console.log(selectedProffys); */
    const selectClassesAndProffys = await db.all(`
     SELECT classes.*, proffys.*
     FROM proffys
@@ -41,5 +41,5 @@ Database.then(async (db) => {
     AND class_schedule.time_from <= "520"
     AND class_schedule.time_to > "520"
    `);
-   console.log(selectClassesSchedules);
+   /* console.log(selectClassesSchedules); */
 });
