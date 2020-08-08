@@ -51,7 +51,9 @@ function pageStudy(req,res) {
     return res.render("study.html", { proffys, filters, subjects, weekdays });
 }
 function pageGiveClasses(req,res) {
-    return res.render("give-classes.html");
+    const data = req.query;
+    console.log(data)
+    return res.render("give-classes.html", { subjects, weekdays});
 }
 const express = require('express');
 const server = express();
