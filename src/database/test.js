@@ -1,6 +1,7 @@
 const Database = require('./db');
+const createProffy = require('./createProffy');
 Database.then(db => {
-    proffy = {
+    proffyValue = {
         name: 'Diego Fernandes', 
         avatar: 'https://avatars2.githubusercontent.com/u/2254731?s=460&amp;u=0ba16a79456c2f250e7579cb388fa18c5c2d7d65&amp;v=4" alt="Diego Fernandes', 
         whatsapp: '92837673', 
@@ -10,7 +11,7 @@ Database.then(db => {
         subject: 'Química', 
         cost: '20'
     };
-    classSchedule = [
+    classScheduleValue = [
         {
             weekday: 1, 
             time_from: 1200, 
@@ -22,4 +23,5 @@ Database.then(db => {
             time_to: 1600
         }
     ];
+   /*  createProffy(db, {proffyValue, classValue, classScheduleValue}) */
 });
