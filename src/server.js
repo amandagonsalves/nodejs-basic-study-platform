@@ -52,7 +52,11 @@ function pageStudy(req,res) {
 }
 function pageGiveClasses(req,res) {
     const data = req.query;
-    console.log(data)
+    const isNotEmpty = Object.keys(data).length != 0;
+    if(isNotEmpty) {
+        proffys.push(data);
+        return res.redirect('/study');
+    }
     return res.render("give-classes.html", { subjects, weekdays});
 }
 const express = require('express');
