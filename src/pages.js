@@ -32,17 +32,32 @@ async function pageStudy(req,res) {
     }
 }
 function pageGiveClasses(req,res) {
-    const data = req.query;
-    const isNotEmpty = Object.keys(data).length != 0;
-    if(isNotEmpty) {
-        data.subject = getSubject(data.subject)
-        proffys.push(data);
-        return res.redirect('/study');
-    }
     return res.render("give-classes.html", { subjects, weekdays});
+}
+function saveClasses(req,res) {
+    const createProffy = require('./database/createProffy');
+    const proffyValue = {
+        name: req.body.name,
+        avatar: req.body.avatar,
+        whatsapp: req.body.whatsapp,
+        bio: req.body.bio
+    }
+    const classValue = {
+        subject: req.body.subject,
+        cost: req.body.cost
+    }
+    const classScheduleValues = req.body.weekday.map((weekday, index) => {
+        return {
+            weekday, 
+            time_from: convertHoursToMinutes(req.body.time_from[index]), 
+            time_to: convertHoursToMinutes(req.body.time_to[index])
+        }
+    })
+    return res.redirect('/study');
 }
 module.exports = {
     pageLanding,
     pageStudy,
-    pageGiveClasses
+    pageGiveClasses,
+    saveClasses
 }

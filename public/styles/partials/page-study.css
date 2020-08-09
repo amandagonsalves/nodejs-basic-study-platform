@@ -102,9 +102,14 @@
 .teacher-item footer .button:hover {
     background-color: var(--color-secondary-dark);
 }
-.no-results {
+main .no-results {
+    max-width: 30rem;
     text-align: center;
-    margin: 7rem;
+    margin: 6rem auto;
+}
+main .no-results img {
+    max-width: 100%;
+    margin-top: 2.3rem;
 }
 @media (min-width:700px) {
     #page-study #container {

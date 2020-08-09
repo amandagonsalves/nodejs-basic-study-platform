@@ -50,7 +50,10 @@
             </header>
             <main>
                 {% if proffys == "" %}
-                    <p class="no-results">Nenhum professor encontrado com a sua pesquisa.</p>
+                <div class="no-results">
+                    <p >Nenhum professor encontrado com a sua pesquisa.</p>
+                    <img src="/images/searching.svg" alt="">
+                </div>
                 {% else %}}
                     {% for proffy in proffys %}
                         <article class="teacher-item">
