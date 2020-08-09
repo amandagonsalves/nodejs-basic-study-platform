@@ -62,10 +62,7 @@ async function saveClasses(req,res) {
         let queryString = "?subject=" + req.body.subject;
         queryString += "&weekday" + req.body.weekday[0];
         queryString += "&time" + req.body.time_from[0];
-        setTimeout(() => {
-            window.location = '/proffy-created'
-        }, 3000);
-        return res.redirect('/study' + queryString);
+        return res.redirect('/proffy-created' + queryString);
     } catch (error) {
         console.log(error)
     }
