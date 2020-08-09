@@ -102,6 +102,10 @@
 .teacher-item footer .button:hover {
     background-color: var(--color-secondary-dark);
 }
+.no-results {
+    text-align: center;
+    margin: 7rem;
+}
 @media (min-width:700px) {
     #page-study #container {
         max-width: 100vw;
