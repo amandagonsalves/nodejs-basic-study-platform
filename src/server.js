@@ -13,4 +13,7 @@ server
 .get('/study', pageStudy)
 .get('/give-classes', pageGiveClasses)
 .post('/save-classes', saveClasses)
+.get('/proffy-created', (req,res) => {
+    return res.render('partials/proffy-created.html')
+})
 .listen(5500);
