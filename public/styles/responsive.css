@@ -14,11 +14,10 @@
     .logo-container {
         grid-area: proffy;
         text-align: initial;
-        align-self: center;
-        margin: 0;
+        margin-top: 2rem;
     }
     .logo-container img {
-        height: 118px;
+        height: 110px;
     }
     .hero-image {
         grid-area: image;
@@ -38,6 +37,6 @@
 }
 @media screen and (min-width:700px) {
     :root {
-        font-size: 60.5%;
+        font-size: 55%;
     }
 }
