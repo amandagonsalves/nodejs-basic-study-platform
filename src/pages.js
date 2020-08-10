@@ -7,7 +7,7 @@ async function pageStudy(req,res) {
     const filters = req.query;
     if(!filters.subject || !filters.weekday || !filters.time) {
         return res.render("study.html", { filters, subjects, weekdays });
-    };
+    }
     const timeToMinutes = convertHoursToMinutes(filters.time);
     const query = `
     SELECT classes.*, proffys.*
