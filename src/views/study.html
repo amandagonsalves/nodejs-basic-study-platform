@@ -49,11 +49,11 @@
                 </div>
             </header>
             <main>
-                <div class="no-results-1"></div>
+                <div class="searching"></div>
                 
                 {% if proffys == "" %}
                     <script>
-                        document.querySelector('.no-results-1').style.display = "none"
+                        document.querySelector('.searching').style.display = "none"
                     </script>
                     <div class="no-results">
                         <p>Nenhum resultado encontrado com sua pesquisa.</p>
@@ -61,6 +61,9 @@
                     </div>
                 {% else %} 
                     {% for proffy in proffys %}
+                        <script>
+                            document.querySelector('.searching').style.display = "none"
+                        </script>
                         <article class="teacher-item">
                             <header>
                                 <img src="{{proffy.avatar}}">
@@ -91,7 +94,7 @@
             const time = document.querySelector('input#time');
             if(!subject.focus() || !weekday.focus() || !time.focus()) {
                 console.log('oi amandinha')
-                document.querySelector('.no-results-1').innerHTML = `
+                document.querySelector('.searching').innerHTML = `
                     <p>Faça sua pesquisa.</p>
                     <img src="/images/web-search.svg">
                 `;
