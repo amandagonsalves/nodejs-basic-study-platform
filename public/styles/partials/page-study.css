@@ -103,6 +103,7 @@
     background-color: var(--color-secondary-dark);
 }
 main .no-results, .no-results-1 {
+    display: block;
     max-width: 30rem;
     text-align: center;
     margin: 6rem auto;

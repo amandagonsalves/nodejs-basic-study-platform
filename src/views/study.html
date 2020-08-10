@@ -49,19 +49,17 @@
                 </div>
             </header>
             <main>
-                <div class="searching"></div>
+                <div class="no-results-1"></div>
+                
                 {% if proffys == "" %}
                     <script>
-                        document.querySelector('.searching').style.display = "none"
+                        document.querySelector('.no-results-1').style.display = "none"
                     </script>
                     <div class="no-results">
                         <p>Nenhum resultado encontrado com sua pesquisa.</p>
                         <img src="/images/searching.svg" alt="">
                     </div>
                 {% else %} 
-                    <script>
-                        document.querySelector('.searching').style.display = "none"
-                    </script>
                     {% for proffy in proffys %}
                         <article class="teacher-item">
                             <header>
@@ -92,11 +90,12 @@
             const weekday = document.querySelector('select#weekday');
             const time = document.querySelector('input#time');
             if(!subject.focus() || !weekday.focus() || !time.focus()) {
-                document.querySelector('.searching').innerHTML = `
+                console.log('oi amandinha')
+                document.querySelector('.no-results-1').innerHTML = `
                     <p>Faça sua pesquisa.</p>
                     <img src="/images/web-search.svg">
                 `;
-            } 
+            }
         </script>
     </body>
 </html>
