@@ -14,6 +14,6 @@ function cloneField(e) {
     for(let item of items) {
         item.querySelector('.buttonField').addEventListener('click', e => {
             item.remove();
-        })
-    }
+        });
+    };
 }
