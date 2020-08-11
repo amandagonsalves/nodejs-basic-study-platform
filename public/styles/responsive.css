@@ -67,6 +67,9 @@
         grid-area: image;
         height: 350px;
     }
+    .buttons-container .study {
+        background-color: var(--color-primary-dark);
+    }
     footer {
         flex: 1;
         background: var(--color-background);
@@ -74,5 +77,11 @@
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         align-items: center;
+    }
+    .welcome {
+        color: var(--color-primary-darker);
+    }
+    .total-connections {
+        color: var(--color-primary-dark);
     }
 }
