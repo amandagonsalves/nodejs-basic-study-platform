@@ -7,8 +7,13 @@ function cloneField(e) {
         field.value = '';
     })
     const button = newFieldContainer.querySelector('.buttonField');
-    console.log(button)
     button.style.display = 'block';
-    newFieldContainer.classList.add('newFieldContainer')
-    document.querySelector('#schedule-items').appendChild(newFieldContainer);
+    newFieldContainer.classList.add('newFieldContainer');
+    document.querySelector('#schedule-items').appendChild(newFieldContainer); 
+    let items = document.querySelector('#schedule-items').querySelectorAll('.schedule-item.newFieldContainer');
+    for(let item of items) {
+        item.querySelector('.buttonField').addEventListener('click', e => {
+            item.remove();
+        })
+    }
 }
