@@ -6,13 +6,13 @@
         grid-template-rows: 350px 1fr;
         grid-template-areas: 
         "proffy image image"
-        "button button texting"
-        ;
+        "footer footer footer"
+        ; 
         column-gap: 87px;
-        row-gap: 86px;
+        row-gap: 86px; 
     }
     .logo-container {
-        grid-area: proffy;
+        grid-area: proffy; 
         text-align: initial;
         margin-top: 2rem;
     }
@@ -20,23 +20,36 @@
         height: 110px;
     }
     .hero-image {
-        grid-area: image;
+        grid-area: image; 
         height: 350px;
     }
     .buttons-container {
-        grid-area: button;
+        grid-area: button; 
         justify-content: flex-start;
-        margin: 0;
     }
     .total-connections {
         grid-area: texting;
+        width: 200px;
+        text-align: end;
     }
     .total-connections img {
         margin: 0;
+        margin-left: 2rem;
+    }
+    .welcome {
+        align-self: center;
+        font-size: 2.4rem;
+        grid-area: welcome; 
+    }
+    footer {
+        display: grid;
+        grid-area: footer;
+        grid-template-areas: "welcome button texting";
     }
 }
 @media screen and (min-width:700px) {
     :root {
         font-size: 55%;
+        font-family: Archivo;
     }
 }

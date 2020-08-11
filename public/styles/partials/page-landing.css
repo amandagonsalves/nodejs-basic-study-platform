@@ -39,6 +39,10 @@
     color: var(--color-button-text);
     transition: background 0.2s;
 }
+.welcome {
+    text-align: center;
+    margin: 3rem 0;
+}
 .buttons-container .study {
     background-color: var(--color-primary-light);
 }
