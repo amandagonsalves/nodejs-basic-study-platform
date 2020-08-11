@@ -1,5 +1,5 @@
 @media screen and (min-width:1100px) {
-    #page-landing #container {
+    /* #page-landing #container {
         max-width: 1100px;
         display: grid;
         grid-template-columns: 2fr 1fr 2fr;
@@ -45,11 +45,34 @@
         display: grid;
         grid-area: footer;
         grid-template-areas: "welcome button texting";
+    } */
+    #page-landing {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
     }
-}
-@media screen and (min-width:700px) {
-    :root {
-        font-size: 55%;
-        font-family: Archivo;
+    #page-landing #container {
+        max-width: 1100px;
+        height: 70vh;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas: "logo image image";
+        align-items: center;
+    }
+    #page-landing .logo-container {
+        text-align: left;
+        grid-area: logo;
+    }
+    #page-landing .hero-image {
+        grid-area: image;
+        height: 350px;
+    }
+    footer {
+        flex: 1;
+        background: var(--color-background);
+        width: 100vw;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        align-items: center;
     }
 }
